@@ -1,3 +1,262 @@
 /* Add your CSS here */
 
 /* Dont' forget to link this file to your HTML in the <head> */
+
+/**/
+/* basicc colours */
+:root {
+  --header-white: white;
+  --main-beige: #eedec8;
+  --second-beige: #f5f0ec;
+  --buttons-blue: #2a37f3;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Questrial", sans-serif;
+}
+
+/* =========   whole website   ==========  */
+
+/* =========   whole website   ==========  */
+/* =========   whole website   ==========  */
+/*  nav and logo grid   */
+header {
+  background-color: var(--header-white);
+  margin: 1rem 1rem 0.4rem 1rem;
+  padding: 0.3rem;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: auto;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  grid-template-areas:
+    "logo name name name .  bar"
+    "manag  manag  manag  .  .  bar"
+    "manag  manag  manag  .  .  .";
+}
+/*             Navigation */
+.nav_bar {
+  display: none;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+/*             name and logo --- logo area  */
+
+.logo_box {
+  grid-area: logo;
+  margin-top: 0.35rem;
+  height: 1rem;
+  width: 1rem;
+  background-color: var(--buttons-blue);
+}
+.name_maya {
+  grid-area: name;
+  font-weight: 800;
+  font-size: 0.75rem;
+  padding-top: 0.3rem;
+  margin-left: -40px;
+}
+.name_manager {
+  grid-area: manag;
+  margin-top: 6px;
+  font-size: 0.8rem;
+  font-weight: 40;
+}
+.name_box > p {
+  display: none;
+}
+/*             hamburgar */
+.ham_bar_box {
+  margin-top: 10px;
+  grid-area: bar;
+  width: 1.8rem;
+  height: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.ham_bar_one {
+  border-radius: 1.5px;
+  width: 50%;
+  height: 3px;
+  background-color: var(--buttons-blue);
+  border-radius: 1.5px;
+}
+
+.ham_bar_two {
+  border-radius: 1.5px;
+  width: 100%;
+  height: 3px;
+  background-color: var(--buttons-blue);
+  border-radius: 1.5px;
+}
+
+.ham_bar_three {
+  border-radius: 1.5px;
+  width: 50%;
+  height: 3px;
+  background-color: var(--buttons-blue);
+  border-radius: 1.5px;
+  align-self: flex-end;
+}
+
+/*             logo */
+
+/*             text */
+
+/**/
+/* main grid layout for whole index page */
+
+/**/
+/*                  main        */
+.hero_card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: var(--second-beige);
+
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  width: 90%;
+  align-self: end;
+}
+
+.hero_card_name_image {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.hero_card_image {
+  border-radius: 50%;
+  height: 7rem;
+}
+
+.hero_card_line {
+  width: 5rem;
+  height: 0.1rem;
+  background-color: var(--buttons-blue);
+  border-radius: 1.5px;
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0.8rem;
+  margin-bottom: 1rem;
+}
+
+.hero_button {
+  display: flex;
+  justify-content: center;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+.hero_button_resume {
+  color: white;
+  background-color: var(--buttons-blue);
+  border-radius: 100px 100px 100px 100px;
+  padding: 0.5rem 2rem 0.5rem 2rem;
+  margin: 0.3rem;
+  font-weight: 800;
+  font-size: 1rem;
+}
+.hero_button_resume:hover {
+  background-color: white;
+  color: black;
+  border: 1px solid var(--buttons-blue);
+}
+.hero_button_projects {
+  background-color: var(--second-beige);
+  border-radius: 100px 100px 100px 100px;
+  border: 1px solid black;
+  padding: 0.5rem 2rem 0.5rem 2rem;
+  margin: 0.3rem;
+  font-weight: 800;
+  font-size: 1rem;
+}
+.hero_card_bottom_gap {
+  height: 10px;
+}
+.hero_button_projects:hover {
+  background-color: var(--buttons-blue);
+  color: white;
+}
+.hero_social {
+  display: flex;
+  justify-content: center;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  margin-top: 1rem;
+  background-color: white;
+  align-items: center;
+}
+
+.hero_social_link {
+  color: black;
+  height: 1.2rem;
+  width: 1.2rem;
+  padding-inline: 1rem;
+}
+
+.hero_card_text {
+  position: absolute;
+  margin-top: 9rem;
+  padding: 0 1.5rem 2rem 1.5rem;
+  background-color: var(--main-beige);
+}
+
+.hero_card_text_p {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  padding-bottom: 1.2rem;
+}
+.hero_card_text_h1 {
+  padding-top: 15rem;
+  padding-bottom: 20px;
+  font-weight: bold;
+}
+.hero_card_text_h2 {
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+/**/
+/**/
+/**/
+/**/
+/*                     MEDIA            */
+@media only screen and (min-width: 1000px) {
+  .nav_bar {
+    display: flex;
+  }
+
+  .ham_bar_box {
+    display: none;
+  }
+
+  header {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .name_box > h3 {
+    margin-right: auto;
+    margin-left: 0.5rem;
+  }
+
+  .name_box > p {
+    display: block;
+    margin-left: 1rem;
+  }
+}
