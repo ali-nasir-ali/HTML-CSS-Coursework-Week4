@@ -269,6 +269,16 @@ footer {
   margin-bottom: 3rem;
   margin-top: 1rem;
 }
+.footer_copy_right > p {
+  font-size: small;
+}
+.footer_wix_link {
+  text-decoration: underline;
+}
+.footer_wix_link:hover {
+  background-color: var(--buttons-blue);
+  color: white;
+}
 /**/
 /**/
 /**/
