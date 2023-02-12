@@ -22,6 +22,16 @@
     <link rel="stylesheet" href="css/main.css" />
 
     <title>Maya Nelson</title>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.js"
+      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(function () {
+        $("#header").load("assets/header.html");
+      });
+    </script>
   </head>
 
   <body>
@@ -30,10 +40,14 @@
 
     <header class="name_box">
       <div class="logo_box"></div>
-      <div class="name_maya"><h2>Maya Nelson</h2></div>
+      <div class="name_maya">
+        <a class="" href="index.html"><h2>Maya Nelson</h2></a>
+      </div>
 
       <p>/</p>
-      <div class="name_manager"><p>PROJECT MANAGER</p></div>
+      <div class="name_manager">
+        <a class="" href="index.html"><p>PROJECT MANAGER</p></a>
+      </div>
 
       <nav class="nav_bar">
         <ul>
@@ -51,6 +65,8 @@
       </div>
     </header>
     <!--  =======================  END of NAV BAR =============================  -->
+
+    <div id="header"></div>
 
     <!--  =======================  START of Main =============================  -->
     <main>
@@ -110,8 +126,35 @@
 
     <!--  =======================  START of Footer =============================  -->
     <footer>
-      <div></div>
+      <div class="footer_contact">
+        <div>
+          <p>Call</p>
+          <p>123-456-7890</p>
+        </div>
+        <div>
+          <p>Write</p>
+          <p>info@mysite.com</p>
+        </div>
+      </div>
+      <div class="footer_social">
+        <p>Follow</p>
+        <!-- sicial links -->
+        <a class="hero_social_link" href="#"><i class="fa fa-facebook"></i></a>
+        <a class="hero_social_link" href="#"><i class="fa fa-twitter"></i></a>
+        <a class="hero_social_link" href="#"><i class="fa fa-linkedin"></i></a>
+        <a class="hero_social_link" href="#"><i class="fa fa-instagram"></i></a>
+      </div>
+      <div class="footer_copy_right">
+        <p>&#x24B8; 2035 by Maya Nelson</p>
+        <p>Powered and secured by Wix</p>
+        <p>
+          The design of this website was made by Wix.com, and is being used here
+          for educational purposes only.
+        </p>
+      </div>
     </footer>
+    <div id="header"></div>
+    <!--#include file="assets/header.html" -->
     <!--  =======================  END of Footer =============================  -->
     <!--  ======================= END of Page Area =============================  -->
   </body>
