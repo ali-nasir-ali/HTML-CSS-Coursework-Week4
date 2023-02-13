@@ -20,6 +20,13 @@ body {
   font-family: "Questrial", sans-serif;
 }
 
+.scroll_container {
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+}
+.scroll_container_child {
+  scroll-snap-align: start;
+}
 /*  */
 
 /*  */
@@ -234,7 +241,99 @@ a {
 /*  */
 
 /*  */
-/* =========   footer   ==========  */
+
+/* =========                   PROJECTS PAGE                       ==========  */
+.project_main {
+  background-color: var(--main-beige);
+  margin-bottom: -22rem;
+}
+.project_main_head {
+  font-size: 1rem;
+  align-content: center;
+  padding-top: 4rem;
+  padding-bottom: 1rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project_main_h1 {
+  font-size: 2rem;
+  padding-top: 0;
+}
+.project_main_logo_box {
+  margin-right: 0.5rem;
+  height: 1.5rem;
+  width: 1.5rem;
+  background-color: var(--buttons-blue);
+  display: flex;
+}
+.project_main_p {
+  margin-inline: 1rem;
+  font-size: 0.9rem;
+  padding-bottom: 0.75rem;
+  line-height: 1.4rem;
+  text-align: center;
+}
+/*                       card */
+.project_main_01 {
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  background-color: white;
+  padding-top: 1rem;
+  margin-bottom: 1rem;
+}
+.project_main_01_head {
+  height: 100%;
+}
+.project_main_01_head_div {
+  display: grid;
+  padding-bottom: 0.9rem;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: auto;
+  grid-template-areas:
+    "b p p p p p p"
+    "b r r r r r r";
+}
+.project_main_01_head_div_blue {
+  grid-area: b;
+  margin-right: 0.3rem;
+  height: 2rem;
+  width: 0.5rem;
+  background-color: var(--buttons-blue);
+}
+.project_main_01_head_div_name {
+  grid-area: p;
+  font: bold;
+  font-size: 0.9rem;
+  font-weight: 800;
+  color: var(--buttons-blue);
+}
+.project_main_01_head_div_title {
+  grid-area: r;
+  font: bold;
+  font-size: 0.7rem;
+  font-weight: 600;
+  padding-top: 0.6rem;
+}
+.project_main_01_head_p {
+  margin-inline: 1rem;
+  font-size: 0.9rem;
+  padding-bottom: 0.75rem;
+  padding-left: 0.8rem;
+  line-height: 1.4rem;
+}
+.project_main_image_img {
+  object-fit: cover;
+  width: 100%;
+  bottom: 0px;
+}
+/*  */
+
+/*  */
+/* =========                      footer  in main js              ==========  */
 /*  footer   */
 footer {
   margin-top: 25rem;
