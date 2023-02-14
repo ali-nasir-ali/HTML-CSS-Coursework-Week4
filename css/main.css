@@ -333,7 +333,13 @@ a {
 /*  */
 /*  */
 /* =========                      RESUME PAGE              ==========  */
-/*  footer   */
+/*  resume   */
+
+.resume_main {
+  background-color: var(--main-beige);
+  padding-bottom: 1rem;
+  margin-bottom: -22rem;
+}
 .resume_main_exp {
   display: flex;
   padding: 0.5rem 0 0.5rem 0;
@@ -359,27 +365,31 @@ a {
   margin-left: 1rem;
   margin-bottom: 1rem;
 }
-.project_main_head {
-  font-size: 1rem;
-  align-content: center;
+.resume_main_skill {
+  padding-left: 1.4rem;
+}
+.resume_main_title {
+  font-size: 0.7rem;
   padding-top: 1rem;
   padding-bottom: 1rem;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
-.project_main_h1 {
-  font-size: 2rem;
-  padding-top: 0;
+.resume_main_body_text {
+  font-size: 1rem;
 }
-.project_main_logo_box {
+.resume_main_logo_box {
   margin-right: 0.5rem;
-  height: 1.5rem;
-  width: 1.5rem;
+  height: 1rem;
+  width: 1rem;
   background-color: var(--buttons-blue);
   display: flex;
+}
+.resume_main_body_line {
+  display: flex;
+  padding-top: 1.5rem;
+}
+.resume_bottom_space {
+  padding-bottom: 2rem;
 }
 /*  */
 /*  */
