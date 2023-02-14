@@ -445,17 +445,11 @@ fieldset {
   padding-right: 1rem;
 }
 
-.form_row {
-  display: flex;
-  flex-direction: row;
-}
-
 .form_column {
   display: flex;
   flex-direction: column;
   padding: 0.25rem;
   padding-top: 1rem;
-  padding-bottom: 1rem;
 }
 input {
   outline: 0;
@@ -468,28 +462,11 @@ input:hover {
   border-color: var(--buttons-blue);
 }
 
-textarea {
-  outline: 0;
-  border-width: 0 0 2px;
-  border-color: black;
-  width: 75%;
-  height: 3rem;
-  margin-bottom: 0.5rem;
+.contact_send_but {
+  padding-bottom: 3rem;
 }
-
-textarea:focus,
-textarea:hover {
-  border-color: var(--buttons-blue);
-}
-
-.send__button {
-  background-color: var(--buttons-blue);
-  border-radius: 100px 100px 100px 100px;
-  color: white;
-  padding: 0.2rem 1.4rem 0.2rem 1.4rem;
-  margin: 0.3rem;
-  font-weight: 600;
-  font-size: 0.8rem;
+.input_form {
+  padding-top: 2rem;
 }
 /*  */
 /*  */
