@@ -18,6 +18,7 @@ class Header extends HTMLElement {
     
       <nav >
         <ul class="navbar" id="navbar">
+          <li><a id="nav_bar_close" href="#"><i class="fa fa-close"></i></a></li>
           <li><a href="index.html">ABOUT ME</a></li>
           <li><a href="resume.html">RESUME</a></li>
           <li><a href="projects.html">PROJECTS</a></li>
