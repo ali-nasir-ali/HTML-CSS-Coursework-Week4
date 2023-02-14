@@ -331,7 +331,58 @@ a {
   bottom: 0px;
 }
 /*  */
+/*  */
+/* =========                      RESUME PAGE              ==========  */
+/*  footer   */
+.resume_main_exp {
+  display: flex;
+  padding: 0.5rem 0 0.5rem 0;
+  justify-content: space-around;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.resume_main_exp h2 {
+  padding-top: 9px;
+}
+.resume_main_01_head_div_title {
+  grid-area: r;
+  font-size: 1rem;
+  padding-top: 0.6rem;
+}
+.project_main_01_head_p_com {
+  margin-bottom: 1rem;
+}
+.resume_main_edu {
+  display: flex;
+  padding: 0.5rem 0 0.5rem 0;
+  margin-top: 1rem;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+}
+.project_main_head {
+  font-size: 1rem;
+  align-content: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project_main_h1 {
+  font-size: 2rem;
+  padding-top: 0;
+}
+.project_main_logo_box {
+  margin-right: 0.5rem;
+  height: 1.5rem;
+  width: 1.5rem;
+  background-color: var(--buttons-blue);
+  display: flex;
+}
+/*  */
+/*  */
 /*  */
 /* =========                      footer  in main js              ==========  */
 /*  footer   */
