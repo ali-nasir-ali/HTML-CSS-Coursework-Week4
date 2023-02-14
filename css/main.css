@@ -5,10 +5,10 @@
 /**/
 /* basicc colours */
 :root {
-  --header-white: white;
-  --main-beige: #eedec8;
-  --second-beige: #f5f0ec;
-  --buttons-blue: #2a37f3;
+  --header-white: #fff;
+  --main-beige: #e6dacd;
+  --second-beige: #f4ece6;
+  --buttons-blue: #0150fd;
 }
 * {
   margin: 0;
@@ -17,7 +17,7 @@
 }
 
 body {
-  font-family: "Questrial", sans-serif;
+  font-family: "Quicksand", sans-serif;
 }
 
 .scroll_container {
@@ -431,6 +431,65 @@ a {
 }
 .resume_bottom_space {
   padding-bottom: 2rem;
+}
+/*  */
+/*  */
+/*  */
+/* =========                      contact form              ==========  */
+/*  contact   */
+fieldset {
+  border: none;
+  background-color: white;
+  display: grid;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.form_row {
+  display: flex;
+  flex-direction: row;
+}
+
+.form_column {
+  display: flex;
+  flex-direction: column;
+  padding: 0.25rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+input {
+  outline: 0;
+  border-width: 0 0 2px;
+  border-color: black;
+}
+input:focus,
+input:hover {
+  border-width: 0 0 3px;
+  border-color: var(--buttons-blue);
+}
+
+textarea {
+  outline: 0;
+  border-width: 0 0 2px;
+  border-color: black;
+  width: 75%;
+  height: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+textarea:focus,
+textarea:hover {
+  border-color: var(--buttons-blue);
+}
+
+.send__button {
+  background-color: var(--buttons-blue);
+  border-radius: 100px 100px 100px 100px;
+  color: white;
+  padding: 0.2rem 1.4rem 0.2rem 1.4rem;
+  margin: 0.3rem;
+  font-weight: 600;
+  font-size: 0.8rem;
 }
 /*  */
 /*  */
